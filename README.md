@@ -22,5 +22,5 @@
 实现步骤:     
 采用Topology spout将上游kafka数据读入，在filter2 bolt清洗数据，hbase bolt将正常以及非正常数据存入hbase中，   
 然后采用滑动窗口机制，将fliterbolt过滤出来的正常数据计算发电机温度高于80度的风机，计数。然后将风机，描述存入mysql中，通过web页面调取，展示出来。    
-数据字段含义：    
+数据字段含义：     
 ![Alt_text]https://github.com/liwenliang0/Warning-message-program-based-storm/raw/master/image/description.png
